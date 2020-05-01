@@ -27,8 +27,3 @@ class QuotesSpider(scrapy.Spider):
         abs_next_page_url = response.urljoin(next_page_url)
 
         yield scrapy.Request(abs_next_page_url)
-
-
-
-
-
