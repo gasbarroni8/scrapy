@@ -11,7 +11,7 @@ class TweetsSpider(Spider):
     for i in range(2009, 2021, 1):
         url = base + str(i) + ".json"
         start_urls.append(url)
-    
+
 
     def parse(self, response):
         jsonresponse = json.loads(response.body)
