@@ -44,4 +44,3 @@ class ClasscentralSpider(Spider):
             absolute_next_page = response.urljoin(next_page)
             yield Request(absolute_next_page,
                           callback=self.parse_subject)
-
